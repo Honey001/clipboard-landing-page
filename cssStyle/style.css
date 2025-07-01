@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+/* || RESET */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+button{
+    border: 0;
+    font: inherit;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* || VARUABLES */
+:root{
+    /* COLORS */
+    /* HSL-PRIMARY-COLOR */
+    --HSL-PRI-GREEN: 171, 66%, 44% ;
+    --HSL-PRI-BLUE: 233, 100%, 69%;
+
+    /* HSL-NEUTRAL-COLOR */
+    --HSL-NEU-DARK-GRAY: 210, 10%, 33%;
+    --HSL-NEU-LIGHT-GRAY: 201, 11%, 66%;
+
+    /* PRIMARY-COLOR */
+    --PRI-GREEN: hsl(171, 66%, 44% );
+    --PRI-BLUE: hsl(233, 100%, 69%);
+        /* NEUTRAL-COLOR */
+    --NEU-DARK-GRAY: hsl(210, 10%, 33%);
+    --NEU-LIGHT-GRAY: hsl(201, 11%, 66%);
+
+    /* FONTS */
+    --FF:"Bai Jamjuree", sans-serif;
+    /* FONT-STYLE */
+    --FS-400: 1.125rem;
+    --FS-500: 1.25rem;
+    --FS-600: 1.5rem;
+    --FS-700: 1.75rem;
+    --FS-800: 2rem;
+    --FS-900: 3rem;
+    /* FONT-WEIGHTS */
+    --FW-REGULAR: 400;
+    --FW-BOLD: 600;
+}
+
+/* || UTILITY */
+.workflow-img{
+    width: 2.5rem;
+}
+.techies-logo{
+    width: 10rem;
+}
+.nowrap{
+    white-space: nowrap;
+}
+
+
+/* || GENERAL */
+body{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.main-article-container{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 5rem;
+    padding: 0 3rem;
+    line-height: 1.5;
+    max-width: 50rem;
+    font-family: var(--FF);
+    color: hsl(var(--HSL-NEU-DARK-GRAY), .7);
+}
+.main-article-container > .article-section{
+    display: flex;
+    flex-direction: column;
+}
+.company-logo{
+    width: 8rem;
+}
+.company-logo-container{
+    background-image:linear-gradient(to bottom, rgba(255,255,255,0) 100%, #fff 100%),
+     url('../images/bg-header-mobile.png');
+    background-position: cover;
+    display: grid;
+    place-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    max-width: 100vw;
+    padding: 3rem 1rem;
+}
+.content-container{
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+.gap{
+    display: grid;
+    align-content: start;
+    gap: 1rem;
+}
+.gap[data-spacing="large"]{
+    gap: 4rem;
+}
+
+.flex-button{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+h1{
+    font-size: var(--FS-800);
+    font-weight: var(--FW-BOLD);
+    color: var(--NEU-DARK-GRAY);
+}
+.text-content{
+    color: var(--NEU-DARK-GRAY); 
+    font-size: var(--FS-700);
+}
+.content-paragraph{
+    font-size: var(--FS-400);
+}
+.button{
+    background-color: hsl(var(--HSL-PRI-GREEN), 1);
+    color: #ffffffd0;
+    padding: 1rem 1.6rem;
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: .1rem .2rem  .4rem .1rem hsl(var(--HSL-PRI-GREEN), .2);
+}
+.button:last-child{
+     background-color: hsl(var(--HSL-PRI-BLUE), 1);
+     box-shadow: .1rem .2rem  .4rem .1rem hsl(var(--HSL-PRI-BLUE), .2);
+}
+.hero-img-container{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 3rem;
+}
+
+.hero-content-container{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+.hero-img-side-content{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: .5rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    color: var(--NEU-DARK-GRAY); 
+    font-size: var(--FS-500);
+}
+.workflow-container{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+.workflow{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+.workflow-content{
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.techies{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+    gap: 5rem;
+}
+.bottom-list {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 3rem;
+      background-color: hsl(var(--HSL-NEU-LIGHT-GRAY), .1);
+  margin-top: 4rem;
+}
+
+.company-bottom-logo {
+  justify-self: start;
+  width: 60px;
+  height: auto;
+}
+
+.bottom-list-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-flow: column nowrap;
+}
+
+.bottom-items {
+    font-family: var(--FF);
+  cursor: pointer;
+   color: hsl(var(--HSL-NEU-DARK-GRAY), .7);
+
+}
+
+.bottom-logos-container {
+  display: flex;
+  gap: 2rem;
+  justify-self: end;
+}
+
+.bottom-logos-list {
+  cursor: pointer;
+      width: 1.5rem;
+}
+
+/* || MEDIA QUERIES */
+@media (min-width: 600px) {
+    .company-logo-container{
+        background-image:linear-gradient(to bottom, rgba(255,255,255,0) 70%, #fff 100%),
+                         url('../images/bg-header-desktop.png');
+    padding: 5rem;
+
+    }
+    .main-article-container{
+        margin: auto;
+        padding: 0;
+    }
+    .flex-button{
+        flex-direction: row;
+    }
+    .button{
+        background-color: hsl(var(--HSL-PRI-GREEN), 1);
+        color: #ffffffd0;
+        padding: .5rem 1.6rem;
+        border-radius: 30px;
+        width: auto;
+        box-shadow: .1rem .2rem  .4rem .1rem hsl(var(--HSL-PRI-GREEN), .2);
+    }
+    h1{
+    font-size: var(--FS-900);
+}
+.nowrap{
+    white-space: normal;
+}
+
+
+    .text-content{
+    color: var(--NEU-DARK-GRAY); 
+    font-size: var(--FS-800);
+    font-weight: var(--FW-BOLD);
+}
+.hero-img-container{
+    flex-flow: row nowrap;
+}
+.hero-img-side-content{
+    flex-flow: column wrap;
+}
+.workflow-container{
+    flex-direction: row;
+    gap: 2rem;
+
+}
+.workflow-content{
+    gap: 1rem;
+}
+.workflow{
+    gap: 2rem;
+}
+.techies{
+    flex-flow: row nowrap;
+}
+.techies-logo{
+    width: 6rem;
+}
+.bottom-list{
+    display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: start;
+  background-color: hsl(var(--HSL-NEU-LIGHT-GRAY), .1);
+  gap: 1rem;
+  padding: 1rem 16rem;
+
+}
+.bottom-list-items {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  gap: 1rem 5rem;
+  text-align: left;
+}
+.company-bottom-logo {
+  width: 40px;
+}
+.bottom-logos-container{
+      gap: 1.2rem;
+}
+.bottom-logos-list{
+        width: 1.2rem;
+}
+}
+
+
+
+
+
+
+
