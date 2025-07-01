@@ -145,6 +145,12 @@ h1{
      background-color: hsl(var(--HSL-PRI-BLUE), 1);
      box-shadow: .1rem .2rem  .4rem .1rem hsl(var(--HSL-PRI-BLUE), .2);
 }
+.button:hover, .button:focus-visible{
+        background-color: hsl(var(--HSL-PRI-GREEN), .7);
+}
+.button:last-child:hover, .button:last-child:focus-visible{
+         background-color: hsl(var(--HSL-PRI-BLUE), .7);
+}
 .hero-img-container{
     display: flex;
     flex-flow: column nowrap;
