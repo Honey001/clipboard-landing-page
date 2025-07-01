@@ -73,6 +73,7 @@ body{
     align-items: center;
     min-height: 100vh;
     gap: 5rem;
+    margin: auto;
     padding: 0 3rem;
     line-height: 1.5;
     max-width: 50rem;
@@ -256,8 +257,7 @@ h1{
 
     }
     .main-article-container{
-        margin: auto;
-        padding: 0;
+        padding: 1rem;
     }
     .flex-button{
         flex-direction: row;
@@ -312,14 +312,12 @@ h1{
   align-items: start;
   background-color: hsl(var(--HSL-NEU-LIGHT-GRAY), .1);
   gap: 1rem;
-  padding: 1rem 16rem;
-
 }
 .bottom-list-items {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto;
-  gap: 1rem 5rem;
+  gap: 1rem 4rem;
   text-align: left;
 }
 .company-bottom-logo {
